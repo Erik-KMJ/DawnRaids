@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class ResourceManager : MonoBehaviour
 {
     public Image bar;
-    public float amount = 0f;
+    public float amount = 100f;
 
     public Image timeBar;
     public float timeAmount = 100f;
@@ -32,27 +32,17 @@ public class ResourceManager : MonoBehaviour
             TimeReduce(10);
         }
 
-
     }
 
-    //public void ResourceReduce(float reduceAmount)
-    //{
-    //    amount -= reduceAmount;
-    //    bar.fillAmount = amount / 100f;
-    //}
-
-    public void ResourceRefill(float refillAmount)
+    public void ResourceRefill(float reduceAmount)
     {
-        amount += refillAmount;
-        //amount = Mathf.Clamp(amount, 0, 100);
+        amount -= reduceAmount;
         bar.fillAmount = amount / 100f;
     }
 
     public void TimeReduce(float reduceAmount)
     {
         timeAmount -= reduceAmount;
-        timeAmount = Mathf.Clamp(timeAmount, 0, 100);
-
-        timeBar.fillAmount = amount / 100f;
+        timeBar.fillAmount = timeAmount / 100f;
     }
 }

@@ -25,7 +25,7 @@ public class ResourceManager : MonoBehaviour
     {
         if (timeAmount <= 0)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         
 

@@ -13,14 +13,17 @@ public class PortraitChange : MonoBehaviour
     public Sprite Happy;
     public Sprite Neutral;
     public Sprite Sad;
-   
+
 
     // Update is called once per frame
-  
+    private void Update()
+    {
+        //ImageChange();
+    }
 
     public void ImageChange()
     {
-        if (resourceManager.amount >= 50f)
+        if (resourceManager.amount >= 50f|| resourceManager.amount <= 75f)
         {
             characterPortrait.sprite = Neutral;
         }

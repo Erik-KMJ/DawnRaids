@@ -516,7 +516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_LocalRotation.w
@@ -726,7 +726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_LocalRotation.w
@@ -993,9 +993,9 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
-  m_FillOrigin: 1
+  m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &877122133
@@ -1544,7 +1544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1695,7 +1695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_LocalRotation.w

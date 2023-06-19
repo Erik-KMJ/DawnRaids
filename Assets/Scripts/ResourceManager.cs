@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class ResourceManager : MonoBehaviour
 {
     public Image bar;
-    public float amount = 100f;
+    public float amount = 0.0f;
 
 
 

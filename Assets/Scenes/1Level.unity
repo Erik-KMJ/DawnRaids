@@ -617,6 +617,10 @@ PrefabInstance:
       propertyPath: increaseResource
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: characterPortrait
+      value: 
+      objectReference: {fileID: 573308274}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -783,6 +787,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ea20a41e134b445af652cbd8e82d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resourceManager: {fileID: 603085999}
+  characterPortrait: {fileID: 573308272}
+  Angry: {fileID: 21300000, guid: e34c82a1803b2ca45b9ec8c52a97c919, type: 3}
+  Bored: {fileID: 21300000, guid: 56657caff2feb6444852c3ba41dab8f4, type: 3}
+  Happy: {fileID: 21300000, guid: 399a50fbd57beb943bb06b678a677f22, type: 3}
+  Neutral: {fileID: 21300000, guid: 24ee91203baed4f4e86a5107adb27244, type: 3}
+  Sad: {fileID: 21300000, guid: eac0ce74665c26743aa8e98481050d3b, type: 3}
 --- !u!1 &603085998
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,6 +870,10 @@ PrefabInstance:
       propertyPath: resourceManager
       value: 
       objectReference: {fileID: 603085999}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: characterPortrait
+      value: 
+      objectReference: {fileID: 573308274}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -902,6 +917,14 @@ PrefabInstance:
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303021630166974064, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303021630166974064, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: 7425061324912479888, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_Sprite
@@ -1531,7 +1554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: amountChange
-      value: 15
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: startColor.a
@@ -1539,11 +1562,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: startColor.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: startColor.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: startColor.r
@@ -1561,6 +1584,10 @@ PrefabInstance:
       propertyPath: increaseResource
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: characterPortrait
+      value: 
+      objectReference: {fileID: 573308274}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1694,6 +1721,10 @@ PrefabInstance:
       propertyPath: increaseResource
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: characterPortrait
+      value: 
+      objectReference: {fileID: 573308274}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2089,6 +2120,10 @@ PrefabInstance:
       propertyPath: resourceManager
       value: 
       objectReference: {fileID: 603085999}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: characterPortrait
+      value: 
+      objectReference: {fileID: 573308274}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_RootOrder
       value: 7

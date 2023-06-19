@@ -16,5 +16,20 @@ public class MainMenuScript : MonoBehaviour
         Debug.Log("QUIT!");
         Application.Quit();
     }
+
+    public void ReturnMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void WinGame()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    public void LoseGame()
+    {
+        SceneManager.LoadScene(4);
+    }
 }
 

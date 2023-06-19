@@ -7,9 +7,10 @@ public class HighlightScript : MonoBehaviour
 {
     public Color startColor;
     public SpriteRenderer object2D;
+    public Sprite object2DClean;
 
     public ResourceManager resourceManager;
-    bool used = false;
+    public bool used = false;
 
     public bool increaseResource;
     public float amountChange;
@@ -18,6 +19,11 @@ public class HighlightScript : MonoBehaviour
     private void Start()
     {
         object2D = GetComponent<SpriteRenderer>();
+        
+        if (used==true)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = object2DClean;
+        }
     }
 
     private void Update()
@@ -31,6 +37,7 @@ public class HighlightScript : MonoBehaviour
         {
             startColor = object2D.color;
             object2D.color = Color.blue;
+            
             print("hover");
         }
         else
@@ -49,7 +56,7 @@ public class HighlightScript : MonoBehaviour
             object2D.color = Color.black;
             resourceManager.TimeReduce(reduceTime);
             resourceManager.ResourceRefill(amountChange);
-            
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = object2DClean;
             print("clicked");
             used = true;
         }
@@ -60,13 +67,16 @@ public class HighlightScript : MonoBehaviour
             {
                 object2D.color = Color.green;
                 resourceManager.ResourceRefill(-amountChange);
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = object2DClean;
                 print("clicked");
                 used = true;
             }
             else
             {
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = object2DClean;
                 resourceManager.amount = 0;
                 resourceManager.bar.fillAmount = 0;
+                used = true;
             }
         }
        

@@ -798,6 +798,7 @@ MonoBehaviour:
   - Hey Son, I did the dishes when I got home from my double...
   - You saw something on the news that you didn't understand?
   - Don't worry about it, probably wasn't important...
+  - The neighbor out back asked if you wanted to play today, you should go!
   textSpeed: 0.1
 --- !u!114 &2072933289
 MonoBehaviour:

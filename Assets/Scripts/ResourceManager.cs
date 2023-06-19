@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 public class ResourceManager : MonoBehaviour
 {
     public Image bar;
-    public float amount = 0.0f;
+    
+    public float amount;
+    public float carryOverAmount;
 
 
 
@@ -17,7 +19,7 @@ public class ResourceManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        amount = carryOverAmount;
     }
 
     // Update is called once per frame
@@ -25,6 +27,7 @@ public class ResourceManager : MonoBehaviour
     {
         if (timeAmount <= 0)
         {
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         
@@ -41,6 +44,7 @@ public class ResourceManager : MonoBehaviour
     { 
         amount += amountChange;
         bar.fillAmount = amount / 100f;
+        carryOverAmount = amount;
     }
 
     public void TimeReduce(float reduceAmount)

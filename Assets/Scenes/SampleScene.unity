@@ -438,6 +438,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: reduceTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: amountChange
       value: 20
       objectReference: {fileID: 0}
@@ -1123,6 +1127,10 @@ PrefabInstance:
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: newColor.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: reduceTime
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: amountChange
@@ -1814,6 +1822,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: reduceTime
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: amountChange
       value: 20
       objectReference: {fileID: 0}
@@ -2026,6 +2038,10 @@ PrefabInstance:
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: newColor.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: reduceTime
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: amountChange

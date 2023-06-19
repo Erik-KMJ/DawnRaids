@@ -13,6 +13,7 @@ public class HighlightScript : MonoBehaviour
 
     public bool increaseResource;
     public float amountChange;
+    public float reduceTime;
 
     private void Start()
     {
@@ -46,13 +47,16 @@ public class HighlightScript : MonoBehaviour
         if (used == false && increaseResource == true)
         {
             object2D.color = Color.black;
+            resourceManager.TimeReduce(reduceTime);
             resourceManager.ResourceRefill(amountChange);
+            
             print("clicked");
             used = true;
         }
         else if(used == false && increaseResource == false) //decrease amount
         {
-            if(amountChange < resourceManager.amount)
+            resourceManager.TimeReduce(reduceTime);
+            if (amountChange < resourceManager.amount)
             {
                 object2D.color = Color.green;
                 resourceManager.ResourceRefill(-amountChange);

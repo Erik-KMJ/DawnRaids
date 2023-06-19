@@ -399,7 +399,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &516663742
 PrefabInstance:
@@ -411,7 +411,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 218022160088977400, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_Name
-      value: SpriteHolder
+      value: Dishes
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: amount
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: object2D
@@ -434,6 +438,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: amountChange
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: startColor.a
       value: 1
       objectReference: {fileID: 0}
@@ -449,9 +457,17 @@ PrefabInstance:
       propertyPath: startColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: resourceManager
+      value: 
+      objectReference: {fileID: 603085999}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: increaseResource
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_LocalScale.x
@@ -695,7 +711,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &603085998
 GameObject:
@@ -743,7 +759,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &721772826
 GameObject:
@@ -842,7 +858,7 @@ RectTransform:
   - {fileID: 1831263659}
   - {fileID: 1813136194}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -994,7 +1010,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &877122131
 GameObject:
@@ -1082,7 +1098,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 218022160088977400, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_Name
-      value: SpriteHolder (2)
+      value: TV
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: amount
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: object2D
@@ -1105,6 +1125,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: amountChange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: startColor.a
       value: 1
       objectReference: {fileID: 0}
@@ -1119,6 +1143,14 @@ PrefabInstance:
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: startColor.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: resourceManager
+      value: 
+      objectReference: {fileID: 603085999}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: increaseResource
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_RootOrder
@@ -1258,7 +1290,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &992192784
 GameObject:
@@ -1743,7 +1775,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1782860703
 PrefabInstance:
@@ -1755,7 +1787,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 218022160088977400, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_Name
-      value: SpriteHolder (3)
+      value: BackDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: amount
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: object2D
@@ -1778,6 +1814,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: amountChange
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: startColor.a
       value: 1
       objectReference: {fileID: 0}
@@ -1792,6 +1832,14 @@ PrefabInstance:
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: startColor.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: resourceManager
+      value: 
+      objectReference: {fileID: 603085999}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: increaseResource
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_RootOrder
@@ -1953,7 +2001,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 218022160088977400, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: m_Name
-      value: SpriteHolder (1)
+      value: SchoolDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: amount
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: object2D
@@ -1976,6 +2028,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: amountChange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: startColor.a
       value: 1
       objectReference: {fileID: 0}
@@ -1989,6 +2045,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
       propertyPath: startColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: resourceManager
+      value: 
+      objectReference: {fileID: 603085999}
+    - target: {fileID: 1149590945574452134, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}
+      propertyPath: increaseResource
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3145459834194364058, guid: ff879a6ffbc60ee4bb2092e48a13e875, type: 3}

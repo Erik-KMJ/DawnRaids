@@ -9,6 +9,8 @@ public class ResourceManager : MonoBehaviour
     public Image bar;
     public float amount = 0f;
 
+
+
     public Image timeBar;
     public float timeAmount = 100f;
 
@@ -25,6 +27,7 @@ public class ResourceManager : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
+        
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -34,9 +37,9 @@ public class ResourceManager : MonoBehaviour
 
     }
 
-    public void ResourceRefill(float reduceAmount)
-    {
-        amount += reduceAmount;
+    public void ResourceRefill(float amountChange)
+    { 
+        amount += amountChange;
         bar.fillAmount = amount / 100f;
     }
 

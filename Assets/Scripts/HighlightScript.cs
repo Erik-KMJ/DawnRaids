@@ -7,7 +7,12 @@ public class HighlightScript : MonoBehaviour
 {
     public Color startColor;
     public SpriteRenderer object2D;
+
+    public ResourceManager resourceManager;
     bool used = false;
+
+    public bool increaseResource;
+    public float amountChange;
 
     private void Start()
     {
@@ -20,6 +25,7 @@ public class HighlightScript : MonoBehaviour
     }
     public void OnMouseEnter()
     {
+       
         if(used == false)
         {
             startColor = object2D.color;
@@ -36,9 +42,31 @@ public class HighlightScript : MonoBehaviour
     }
     public void OnMouseDown()
     {
-        object2D.color = Color.black;
-        print("clicked");
-        used = true;
+       
+        if (used == false && increaseResource == true)
+        {
+            object2D.color = Color.black;
+            resourceManager.ResourceRefill(amountChange);
+            print("clicked");
+            used = true;
+        }
+        else if(used == false && increaseResource == false) //decrease amount
+        {
+            if(amountChange < resourceManager.amount)
+            {
+                object2D.color = Color.green;
+                resourceManager.ResourceRefill(-amountChange);
+                print("clicked");
+                used = true;
+            }
+            else
+            {
+                resourceManager.amount = 0;
+                resourceManager.bar.fillAmount = 0;
+            }
+        }
+       
+      
     }
     public void OnMouseUp()
     {

@@ -9,22 +9,25 @@ public class ResourceManager : MonoBehaviour
     public Image bar;
     public float amount = 100f;
 
+
+
     public Image timeBar;
     public float timeAmount = 100f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(timeAmount <= 0)
+        if (timeAmount <= 0)
         {
             SceneManager.LoadScene(0);
         }
+        
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -34,9 +37,9 @@ public class ResourceManager : MonoBehaviour
 
     }
 
-    public void ResourceRefill(float reduceAmount)
-    {
-        amount -= reduceAmount;
+    public void ResourceRefill(float amountChange)
+    { 
+        amount += amountChange;
         bar.fillAmount = amount / 100f;
     }
 

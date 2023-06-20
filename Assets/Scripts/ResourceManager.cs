@@ -25,6 +25,8 @@ public class ResourceManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        LoseGame();
+
         if (timeAmount <= 0)
         {
             
@@ -51,5 +53,18 @@ public class ResourceManager : MonoBehaviour
     {
         timeAmount -= reduceAmount;
         timeBar.fillAmount = timeAmount / 100f;
+    }
+
+    public void WinGame()
+    {
+        SceneManager.LoadScene(16);
+    }
+
+    public void LoseGame()
+    {
+        if (amount >= 100)
+        {
+            SceneManager.LoadScene(17);
+        }
     }
 }

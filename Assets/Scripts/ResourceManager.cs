@@ -34,11 +34,11 @@ public class ResourceManager : MonoBehaviour
         }
         
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ResourceRefill(20);
-            TimeReduce(10);
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    ResourceRefill(20);
+        //    TimeReduce(10);
+        //}
 
     }
 

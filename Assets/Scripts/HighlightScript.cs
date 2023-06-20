@@ -13,6 +13,8 @@ public class HighlightScript : MonoBehaviour
     public PortraitChange characterPortrait;
     public bool used = false;
 
+    [SerializeField] private AudioSource audioSource; 
+
     public bool increaseResource;
     public float amountChange;
     public float reduceTime;
@@ -56,7 +58,7 @@ public class HighlightScript : MonoBehaviour
         if (used == false && increaseResource == true)
         {
             object2D.color = Color.black;
-            
+            audioSource.Play();
             resourceManager.TimeReduce(reduceTime);
             resourceManager.ResourceRefill(amountChange);
             this.gameObject.GetComponent<SpriteRenderer>().sprite = object2DClean;
@@ -69,6 +71,7 @@ public class HighlightScript : MonoBehaviour
             if (amountChange < resourceManager.amount)
             {
                 object2D.color = Color.green;
+                audioSource.Play();
                 resourceManager.ResourceRefill(-amountChange);
                 this.gameObject.GetComponent<SpriteRenderer>().sprite = object2DClean;
                 print("clicked");
@@ -77,6 +80,7 @@ public class HighlightScript : MonoBehaviour
             else
             {
                 this.gameObject.GetComponent<SpriteRenderer>().sprite = object2DClean;
+                audioSource.Play();
                 resourceManager.amount = 0;
                 resourceManager.bar.fillAmount = 0;
                 used = true;

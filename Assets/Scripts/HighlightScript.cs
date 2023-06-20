@@ -10,6 +10,7 @@ public class HighlightScript : MonoBehaviour
     public Sprite object2DClean;
 
     public ResourceManager resourceManager;
+    public PortraitChange characterPortrait;
     public bool used = false;
 
     public bool increaseResource;
@@ -29,6 +30,7 @@ public class HighlightScript : MonoBehaviour
     private void Update()
     {
         object2D = GetComponent<SpriteRenderer>();
+        characterPortrait.ImageChange();
     }
     public void OnMouseEnter()
     {
@@ -50,10 +52,11 @@ public class HighlightScript : MonoBehaviour
     }
     public void OnMouseDown()
     {
-       
+        characterPortrait.ImageChange();
         if (used == false && increaseResource == true)
         {
             object2D.color = Color.black;
+            
             resourceManager.TimeReduce(reduceTime);
             resourceManager.ResourceRefill(amountChange);
             this.gameObject.GetComponent<SpriteRenderer>().sprite = object2DClean;

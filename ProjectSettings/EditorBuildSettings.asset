@@ -15,6 +15,45 @@ EditorBuildSettings:
     path: Assets/Scenes/1Level.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/2nd TextScene 1.unity
+    guid: b744a00cecdd3e445af2007443b19b6b
+  - enabled: 1
+    path: Assets/Scenes/2Level.unity
+    guid: dd4f855b162bc6e40b786b99c2df59f4
+  - enabled: 1
+    path: Assets/Scenes/3rd TextScene.unity
+    guid: ac8cdb3cf2c847e41b933b5ea82a930d
+  - enabled: 1
+    path: Assets/Scenes/3Level.unity
+    guid: 18177e773804eb84c8e430842c395398
+  - enabled: 1
+    path: Assets/Scenes/4th TextScene.unity
+    guid: 79f900d20b2c24f4da4ed1b4919b3dab
+  - enabled: 1
+    path: Assets/Scenes/4Level.unity
+    guid: 0cc532841c2e9e9478fa2f8c90da3d85
+  - enabled: 1
+    path: Assets/Scenes/5th TextScene.unity
+    guid: 9529a42333b143d418595f4063568d5b
+  - enabled: 1
+    path: Assets/Scenes/5Level.unity
+    guid: 33f600de4b173f84ab2c870f66026fd8
+  - enabled: 1
+    path: Assets/Scenes/6th TextScene.unity
+    guid: 9c58fdaf7790e524fa427b567d765e86
+  - enabled: 1
+    path: Assets/Scenes/6Level.unity
+    guid: 108b9be83460b854aa6be77db0ff5248
+  - enabled: 1
+    path: Assets/Scenes/7th TextScene.unity
+    guid: 52ddf10cb0b848142b2e733d743378b8
+  - enabled: 1
+    path: Assets/Scenes/7Level.unity
+    guid: 1362939bed3fc2c44847e0197e8e2145
+  - enabled: 1
+    path: Assets/Scenes/END.unity
+    guid: 03f4d1de7eb31164bbf46639c41d5423
+  - enabled: 1
     path: Assets/Scenes/Win Scene.unity
     guid: 5fe633d10a94f704e9bf876f353dddfa
   - enabled: 1

@@ -795,11 +795,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 655609525}
   lines:
-  - Sorry Sonny, I won't be home till late...
-  - Dad is on night shift, so you will be on your own...
-  - Can you do the chores before I get back?
-  - Dishes need to be cleaned and the Carpet needs to be Vacuumed...
-  - Love You <3
+  - Sonny, do you want to just stay home today?
+  - Keep me company and help me with the chores!
+  - Dad is off today too, you can play a bit of footy out back when you are done!
   textSpeed: 0.1
 --- !u!114 &2072933289
 MonoBehaviour:

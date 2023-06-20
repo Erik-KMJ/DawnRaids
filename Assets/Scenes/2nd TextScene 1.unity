@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mum
+  m_text: Dad
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -795,11 +795,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 655609525}
   lines:
-  - Sorry Sonny, I won't be home till late...
-  - Dad is on night shift, so you will be on your own...
-  - Can you do the chores before I get back?
-  - Dishes need to be cleaned and the Carpet needs to be Vacuumed...
-  - Love You <3
+  - Hey Son, I did the dishes when I got home from my double...
+  - You saw something on the news that you didn't understand?
+  - Don't worry about it, probably wasn't important...
+  - The neighbor out back asked if you wanted to play today, you should go!
   textSpeed: 0.1
 --- !u!114 &2072933289
 MonoBehaviour:

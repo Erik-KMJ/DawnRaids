@@ -10,6 +10,8 @@ public class Dialogue : MonoBehaviour
     public string[] lines;
     public float textSpeed;
 
+    [SerializeField] private AudioSource audioSource;
+
     private int index;
 
     // Start is called before the first frame update
@@ -24,7 +26,8 @@ public class Dialogue : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            if(textComponent.text == lines[index])
+            audioSource.Play();
+            if (textComponent.text == lines[index])
             {
                 NextLine();
             }
